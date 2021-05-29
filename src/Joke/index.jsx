@@ -10,7 +10,7 @@ export const Joke = (props) => {
         const [downLikes, setDownLikes] = useState([user.dislikes]);
 
         return (
-          <div className="container">
+          <div key={user.id} className="container">
             <div className="joke">
               <div className="joke__body">
                 <div className="joke__user">
